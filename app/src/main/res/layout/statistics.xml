@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/v960_ning_05"
+    tools:context=".Statistics">
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="0dp">-->
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
+            app:layout_constraintEnd_toEndOf="@+id/progress_bar"
+            app:layout_constraintStart_toStartOf="@+id/progress_bar"
+            app:layout_constraintTop_toTopOf="@+id/progress_bar" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="85%"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/progress_bar2"
+            app:layout_constraintEnd_toEndOf="@+id/progress_bar2"
+            app:layout_constraintStart_toStartOf="@+id/progress_bar2"
+            app:layout_constraintTop_toTopOf="@+id/progress_bar2" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar3"
+            style="@style/CircularDeterminateProgressBar"
+            android:layout_width="211dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar2"
+            tools:progress="60" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar2"
+            style="@style/CircularDeterminateProgressBar"
+            android:layout_width="211dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+            tools:progress="60" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/CircularDeterminateProgressBar"
+            android:layout_width="211dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name1"
+            tools:progress="60" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/amaranth"
+            android:text="STATISTICS"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="78%"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/progress_bar3"
+            app:layout_constraintEnd_toEndOf="@+id/progress_bar3"
+            app:layout_constraintStart_toStartOf="@+id/progress_bar3"
+            app:layout_constraintTop_toTopOf="@+id/progress_bar3" />
+
+<!--    </ScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

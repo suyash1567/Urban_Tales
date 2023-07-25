@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "789504384913",
+    "project_id": "login-register-urbantails",
+    "storage_bucket": "login-register-urbantails.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789504384913:android:875c0e48cf73d40d0e8430",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789504384913-e1fqcui2rst0nr8k2hqshqq3nppdp5ms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKNpxakgLjN_kX1sKVyYlfQKDbv1fSMUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789504384913-e1fqcui2rst0nr8k2hqshqq3nppdp5ms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

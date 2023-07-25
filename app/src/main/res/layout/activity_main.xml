@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcf1ed"
+    android:id="@+id/main_layout"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4000000"
+        android:visibility="invisible">
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-152dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="32dp">
+
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/iv2"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    app:srcCompat="@drawable/profile" />-->
+
+                <TextView
+                    android:id="@+id/hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Hello Saurav!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/amaranth"
+                android:text="Find your Pet"
+                android:textAlignment="center"
+                android:textColor="#26273a"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/addpet"
+                android:layout_width="250dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="125dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/round_corner_button"
+                android:fontFamily="@font/amaranth"
+                android:text="Add Pet"
+                android:textStyle="bold"
+                app:backgroundTint="#35ACBC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_category_1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/dog1"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="18dp"
+                        app:srcCompat="@drawable/ic_1" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/amaranth"
+                        android:text="Dogs"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_category_2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/cat1"
+                        android:layout_width="61dp"
+                        android:layout_height="44dp"
+                        android:layout_margin="18dp"
+                        app:srcCompat="@drawable/ic_2" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Cats"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_category_3"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/rabbit1"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="18dp"
+                        app:srcCompat="@drawable/rabbit" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Rabbit"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Some of our pets"
+                    android:textColor="#26273a"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Previous"
+                    android:fontFamily="@font/amaranth"
+
+                    android:textAlignment="viewEnd"
+                    android:textColor="#ff5e00"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/amaranth"
+                    android:text="See More"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#ff5e00"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/pick_background">
+
+                <TextView
+                    android:id="@+id/email1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Mangalore"
+                    android:textColor="#262731"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/breed1" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/picture"
+                    app:layout_constraintStart_toStartOf="@+id/breed1"
+                    app:layout_constraintTop_toBottomOf="@+id/breed1"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/location" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/picture"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/turkish"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Snowy"
+                    android:textColor="#26273a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/picture"
+                    app:layout_constraintTop_toTopOf="@+id/picture" />
+
+                <TextView
+                    android:id="@+id/breed1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/amaranth"
+                    android:text="Turkish Angora"
+                    android:textColor="#26273a"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/name1"
+                    app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+                <TextView
+                    android:id="@+id/gender1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_1"
+                    android:fontFamily="@font/amaranth"
+
+                    android:gravity="center"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="Male"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/email1"
+                    app:layout_constraintTop_toTopOf="@+id/email1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/pick_background">
+
+                <TextView
+                    android:id="@+id/location2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Udupi"
+                    android:textColor="#262731"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/breed2" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/breed2"
+                    app:layout_constraintTop_toBottomOf="@+id/breed2"
+                    app:srcCompat="@drawable/location" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/download"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Pepper"
+                    android:textColor="#26273a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/pic2"
+                    app:layout_constraintTop_toTopOf="@+id/pic2" />
+
+                <TextView
+                    android:id="@+id/breed2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="German Shepherd"
+                    android:textColor="#26273a"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/name2"
+                    app:layout_constraintTop_toBottomOf="@+id/name2" />
+
+                <TextView
+                    android:id="@+id/gender2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_2"
+                    android:gravity="center"
+
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="Female"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/location2"
+                    app:layout_constraintTop_toTopOf="@+id/location2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/pick_background">
+
+                <TextView
+                    android:id="@+id/location3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Agumbe"
+                    android:textColor="#262731"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/breed3" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:layout_constraintStart_toStartOf="@+id/breed3"
+                    app:layout_constraintTop_toBottomOf="@+id/breed3"
+                    app:srcCompat="@drawable/location" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/pic3"
+                    android:layout_width="115dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/golden"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Shiro"
+                    android:textColor="#26273a"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/pic3"
+                    app:layout_constraintTop_toTopOf="@+id/pic3" />
+
+                <TextView
+                    android:id="@+id/breed3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Golden Retriever"
+                    android:textColor="#26273a"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/name3"
+                    app:layout_constraintTop_toBottomOf="@+id/name3" />
+
+                <TextView
+                    android:id="@+id/gender3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/button_1"
+                    android:gravity="center"
+
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="Male"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@+id/location3"
+                    app:layout_constraintTop_toTopOf="@+id/location3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

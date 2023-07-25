@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="bold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcf1ed"
+    tools:context=".Login">
+
+    <TextView
+
+        android:id="@+id/tv1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginLeft="151dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginRight="169dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Hello!"
+        android:textSize="@dimen/_28sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv2" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_140sdp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/_140sdp"
+        android:layout_marginRight="140dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Welcome to Urban Tails"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <EditText
+        android:id="@+id/email"
+
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="101dp"
+
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="@dimen/_101sdp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:fontFamily="@font/amaranth"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/password"
+
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="@dimen/_75sdp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="@dimen/_74sdp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_baseline_password_24"
+        android:drawableLeft="@drawable/ic_baseline_password_24"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:fontFamily="@font/amaranth"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:longClickable="false"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="387dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pngtreeminimalist_cartoon_animal_footprints_4524495" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:background="@drawable/round_corner_button"
+        android:fontFamily="@font/amaranth"
+        android:text="Login"
+        android:textStyle="bold"
+        app:backgroundTint="#35ACBC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Forgot Password?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/remember_me"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="124dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/amaranth"
+        android:hint="Remember Me"
+        android:text="Remember Me"
+        android:textColor="#8F020202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="166dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/amaranth"
+        android:text="New User? Register Now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="143dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Other ways to Sign In"
+        app:layout_constraintEnd_toStartOf="@+id/google1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register" />
+
+    <ImageView
+        android:id="@+id/google1"
+        android:layout_width="55dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        app:layout_constraintEnd_toStartOf="@+id/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:srcCompat="@drawable/icons8_google_240" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        app:srcCompat="@drawable/fb" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="387dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pngitem_2136449"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
